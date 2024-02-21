@@ -1,0 +1,7 @@
+#groceries-alert {
+  height: 20px;
+}
+
+#groceries-alert > p {
+  font-size: 12px;
+}

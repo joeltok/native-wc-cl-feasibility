@@ -1,0 +1,9 @@
+<div id="grocery-list">
+  <h2 id="title">{{ title }}</h2>
+  <ul id="grocery-items">
+    <li *ngFor="let item of groceryItems">
+      {{ item }}
+    </li>
+  </ul>
+  <button (click)="onReminderClick($event)">{{ !hasReminder ? 'Send Reminder' : 'Cancel Reminder'}}</button>
+</div>

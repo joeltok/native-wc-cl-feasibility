@@ -1,0 +1,11 @@
+<main>
+  <grocery-list
+    [title]="title"
+    [groceryItems]="groceryItems"
+    [hasReminder]="hasReminder"
+    (sendReminder)="sendReminder($event)"
+  ></grocery-list>
+  <div id="groceries-alert">
+    <p>{{ hasReminder ? 'Please buy groceries ya :)' : '' }}</p>
+  </div>
+</main>
